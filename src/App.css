@@ -20,6 +20,8 @@ body {
   
 .right-arrow,
 .left-arrow {
+  width: 30px;
+  height: 30px;
   cursor: pointer;
   background: transparent;
   outline: none;
@@ -27,14 +29,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #FF2625;
-  font-size: 25px;
-  border-radius: 4px;
   position: absolute;
-  bottom: -20px;
+  bottom: -10px;
   right: 80px;
-  transform: scale(1, 1);
-  transition: 0.3s all ease-in-out;
+  transform: scale(1.1, 1.1);
+  transition: 0.2s all ease-in-out;
 }
 
 .right-arrow {
@@ -70,32 +69,36 @@ body {
 }
 
 .exercise-card {
-  width: 400px;
-  height: 445px;
-  background: #fff;
-  border-top: 4px solid #FF2625;
-  border-bottom-left-radius: 20px;
+  width: 300px;
+  height: 330px;
+  margin: 15px 6px;
+  background: #1f2937;
+  border-radius: 50px;
   text-decoration: none;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  padding-bottom: 10px;
+  padding: 0px 12px;
   transform: scale(1, 1);
-  transition: 0.3s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+  box-shadow: 5px 5px 20px #00000033;
 }
 
 .exercise-card img {
-  height: 326px;
+  margin-top: 12px;
+  border-radius: 40px;
+  height: 260px;
 }
 
 .bodyPart-card {
   transform: scale(1, 1);
-  transition: 0.3s all ease-in-out;
+  margin: 28px 0px;
+  transition: 0.2s all ease-in-out;
 }
 
 .exercise-card:hover,
 .bodyPart-card:hover {
-  transform: scale(1.1, 1.1);
+  transform: scale(1.02, 1.02);
 }
 
 .search-btn:hover {
@@ -121,11 +124,6 @@ body {
 
   .react-horizontal-scrolling-menu--scroll-container {
     width: 500px;
-  }
-
-  .left-arrow,
-  .right-arrow {
-    position: static !important;
   }
 
   .hero-banner-img {

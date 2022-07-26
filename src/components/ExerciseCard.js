@@ -1,21 +1,40 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Button, Stack, Typography } from '@mui/material';
+import { Button, Stack } from '@mui/material';
 
 const ExerciseCard = ({ exercise }) => (
   <Link className="exercise-card" to={`/exercise/${exercise.id}`}>
     <img src={exercise.gifUrl} alt={exercise.name} loading="lazy" />
     <Stack direction="row">
-      <Button sx={{ ml: '21px', color: '#fff', background: '#FFA9A9', fontSize: '14px', borderRadius: '20px', textTransform: 'capitalize' }}>
+      <Button 
+        sx={{ 
+          ml: '20px',
+          mt: '10px', 
+          color: '#fff', 
+          fontWeight: 'bold',
+          backgroundColor: '#1e40af',
+          borderRadius: '20px', 
+          textTransform: 'capitalize' 
+        }}
+      >
         {exercise.bodyPart}
       </Button>
-      <Button sx={{ ml: '21px', color: '#fff', background: '#FCC757', fontSize: '14px', borderRadius: '20px', textTransform: 'capitalize' }}>
+      <Button 
+        variant="text"
+        sx={{ 
+          ml: '20px', 
+          mt: '8px', 
+          color: '#fff', 
+          fontWeight: 'bold',
+          textTransform: 'capitalize' 
+        }}
+      >
         {exercise.target}
       </Button>
     </Stack>
-    <Typography ml="21px" color="#000" fontWeight="bold" sx={{ fontSize: { lg: '24px', xs: '20px' } }} mt="11px" pb="10px" textTransform="capitalize">
+    <h4 className="mt-6 text-center tracking-wide text-gray-800 text-xl sm:text-xl md:text-3xl">
       {exercise.name}
-    </Typography>
+    </h4>
   </Link>
 );
 
