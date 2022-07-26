@@ -1,36 +1,30 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Button, Stack } from '@mui/material';
+import { Stack } from '@mui/material';
 
 const ExerciseCard = ({ exercise }) => (
   <Link className="exercise-card" to={`/exercise/${exercise.id}`}>
     <img src={exercise.gifUrl} alt={exercise.name} loading="lazy" />
-    <Stack direction="row">
-      <Button 
-        sx={{ 
-          ml: '20px',
-          mt: '10px', 
+    <Stack direction="row" style={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center', marginTop: '10px' }}>
+      <button 
+        style={{ 
           color: '#fff', 
-          fontWeight: 'bold',
           backgroundColor: '#1e40af',
-          borderRadius: '20px', 
+          borderRadius: '20px',
+          padding: '5px 16px', 
           textTransform: 'capitalize' 
         }}
       >
         {exercise.bodyPart}
-      </Button>
-      <Button 
-        variant="text"
-        sx={{ 
-          ml: '20px', 
-          mt: '8px', 
+      </button>
+      <button 
+        style={{ 
           color: '#fff', 
-          fontWeight: 'bold',
-          textTransform: 'capitalize' 
+          textTransform: 'capitalize',
         }}
       >
         {exercise.target}
-      </Button>
+      </button>
     </Stack>
     <h4 className="mt-6 text-center tracking-wide text-gray-800 text-xl sm:text-xl md:text-3xl">
       {exercise.name}

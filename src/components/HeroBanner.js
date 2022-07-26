@@ -9,7 +9,6 @@ import Logo from '../assets/images/fitness-logo.png';
 const navigation = [
   { name: 'Home', href: '/' },
   { name: 'Exercises', href: '#exercises' },
-  { name: 'Contact', href: '#contact' },
 ]
 
 const HeroBanner = () => {

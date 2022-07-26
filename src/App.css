@@ -11,7 +11,10 @@ body {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  
+}
+
+html {
+  scroll-behavior: smooth;
 }
   
 ::-webkit-scrollbar {
@@ -52,8 +55,9 @@ body {
 }
 
 .detail-image {
-  width: 729px;
-  height: 742px;
+  width: 600px;
+  height: 600px;
+  margin: 30px;
 }
 
 .hero-banner-img {
@@ -81,7 +85,7 @@ body {
   padding: 0px 12px;
   transform: scale(1, 1);
   transition: 0.2s all ease-in-out;
-  box-shadow: 5px 5px 20px #00000033;
+  box-shadow: 5px 5px 20px #00000055;
 }
 
 .exercise-card img {
@@ -106,19 +110,24 @@ body {
   border: 1px solid #FF2625 !important;
 }
 
+.ytVideos-section {
+  margin: auto;
+}
+
 .exercise-video {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  width: 387px;
-  height: 381px;
+  gap: 10px;
+  width: 360px;
+  height: 320px;
   text-decoration: none;
 }
 
 @media screen and (max-width:1200px) {
   .detail-image {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
+    margin: 0;
   }
 
 
@@ -144,5 +153,11 @@ body {
 @media screen and (max-width:400px) {
   .exercise-card {
     width: 280px;
+  }
+
+  .detail-image {
+    width: 400px;
+    height: 350px;
+    margin: 0;
   }
 }

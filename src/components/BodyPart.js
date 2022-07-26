@@ -8,7 +8,7 @@ const BodyPart = ({ item, setBodyPart, bodyPart }) => (
     type="button"
     alignItems="center"
     justifyContent="center"
-    className="bodyPart-card"
+    className="bodyPart-card border-2 border-gray-200"
     sx={{
       boxShadow: bodyPart === item ? '5px 5px 20px #00000033' : '',
       backgroundColor: '#f9f9f9',
@@ -20,7 +20,7 @@ const BodyPart = ({ item, setBodyPart, bodyPart }) => (
     }}
     onClick={() => {
       setBodyPart(item);
-      window.scrollTo({ top: 1800, left: 100, behavior: 'smooth' });
+      window.scrollTo({ top: 1340, behavior: 'smooth' });
     }}
   >
     <img src={Icon} alt="Gym Logo" style={{ height: '35px' }} />
