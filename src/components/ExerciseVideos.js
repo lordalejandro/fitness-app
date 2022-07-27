@@ -11,7 +11,7 @@ const ExerciseVideos = ({ exerciseVideos, name }) => {
       <h3 className="tracking-tight font-extrabold text-gray-800 text-2xl md:text-4xl md:mb-5 text-left md:text-center p-[20px]">
         Watch more <span className="text-indigo-600 capitalize">{name}</span> exercise videos...
       </h3>
-      <Stack sx={{ flexDirection: { lg: 'row' }, gap: { lg: '60px', xs: '30px' } }} justifyContent="center" flexWrap="wrap" alignItems="center">
+      <Stack sx={{ flexDirection: { lg: 'row' }, gap: { lg: '60px', xs: '10px' } }} justifyContent="center" flexWrap="wrap" alignItems="center">
         {exerciseVideos?.slice(0, 3).map((item, index) => (
           <a
             key={index}

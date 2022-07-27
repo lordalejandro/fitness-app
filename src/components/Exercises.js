@@ -51,7 +51,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
       </h4>
       <Stack 
         direction="row" 
-        sx={{ gap: { lg: '100px', xs: '50px' } }} 
+        sx={{ gap: { lg: '20px 110px', xs: '0px' } }} 
         flexWrap="wrap" 
         justifyContent="center"
       >
@@ -59,7 +59,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
           <ExerciseCard key={index} exercise={exercise} />
         ))}
       </Stack>
-      <Stack sx={{ mt: { lg: '114px', xs: '70px' } }} alignItems="center">
+      <Stack sx={{ mt: { lg: '20px', xs: '0px' } }} alignItems="center">
         {exercises.length > 9 && (
           <Pagination
             color="standard"
@@ -68,7 +68,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
             count={Math.ceil(exercises.length / exercisesPerPage)}
             page={currentPage}
             onChange={paginate}
-            size="large"
+            size="medium"
           />
         )}
       </Stack>

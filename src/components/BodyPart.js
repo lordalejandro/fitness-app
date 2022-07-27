@@ -12,7 +12,7 @@ const BodyPart = ({ item, setBodyPart, bodyPart }) => (
     sx={{
       boxShadow: bodyPart === item ? '5px 5px 20px #00000033' : '',
       backgroundColor: '#f9f9f9',
-      borderRadius: '35px',
+      borderRadius: '55px',
       width: '270px',
       height: '280px', 
       cursor: 'pointer', 

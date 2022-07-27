@@ -26,7 +26,7 @@ const ExerciseCard = ({ exercise }) => (
         {exercise.target}
       </button>
     </Stack>
-    <h4 className="mt-6 text-center tracking-wide text-gray-800 text-xl sm:text-xl md:text-3xl">
+    <h4 className="mt-6 text-center tracking-wide text-gray-800 text-2xl md:text-3xl">
       {exercise.name}
     </h4>
   </Link>

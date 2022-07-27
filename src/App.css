@@ -75,7 +75,7 @@ html {
 .exercise-card {
   width: 300px;
   height: 330px;
-  margin: 15px 6px;
+  margin-bottom: 120px;
   background: #1f2937;
   border-radius: 50px;
   text-decoration: none;
@@ -123,6 +123,21 @@ html {
   text-decoration: none;
 }
 
+.social-button {
+  background-color: rgb(210, 211, 214);
+  border-radius: 50%;
+  padding: 10px;
+  transition: all .2s ease;
+  transform: scale(1, 1);
+}
+.social-button a{
+  font-size: 2rem;
+}
+
+.social-button:hover {
+  transform: scale(1.1, 1.1);
+}
+
 @media screen and (max-width:1200px) {
   .detail-image {
     width: 400px;
@@ -153,6 +168,7 @@ html {
 @media screen and (max-width:400px) {
   .exercise-card {
     width: 280px;
+    margin-bottom: 110px;
   }
 
   .detail-image {
