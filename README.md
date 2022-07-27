@@ -1,6 +1,6 @@
 # React Fitness Web App
 
-![React Fitness App](https://ibb.co/zVDR7RB/react-share-img.png)
+[React Fitness App](./public/share-img.png)
 
 ## This website was Develop using React and 2 API's from RapidAPI. Those are: 
 ### ExerciseDB => https://rapidapi.com/justin-WFnsXH_t6/api/exercisedb/
